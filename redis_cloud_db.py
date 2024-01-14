@@ -2,9 +2,9 @@ import redis
 from restaurant_reviews import Restaurant
 
 def connect_to_redis():
-    host = 'redis-16849.c321.us-east-1-2.ec2.cloud.redislabs.com'
+    host = 'redis-16849.c321.us-east-1-2.ec2.cloud.redislabs.com:'
     port = 16849
-    password = 'AJAJV5Wmyq6fTdggRDnjInktlLsubn48'
+    password = ''
     r = redis.StrictRedis(host=host, port=port, password=password, decode_responses=True)
     return r
 
@@ -61,18 +61,13 @@ def search(redis_conn, postal_code):
     return redis_conn.exists(key)
 
 if __name__ == "__main__":
-   
+   '''
     # Connect to Redis
     redis_conn = connect_to_redis()
-    clear_table(redis_conn)
-    '''
+    
     # Example Usage:
     # Define reviews and postal code
-    reviews_to_add = [
-        str(Review("John", 4, "Great place!")),
-        str(Review("Alice", 5, "Amazing food!")),
-        # Add more reviews as needed
-    ]
+  
     postal_code_to_search = "12345"
 
     # Add reviews to the database
@@ -86,4 +81,4 @@ if __name__ == "__main__":
 
     # Print all data in the database
     print_all_data(redis_conn)
-        '''
+     '''
