@@ -1,6 +1,6 @@
 import cohere
 from cohere.responses.classify import Example
-co = cohere.Client("YkJi3K3Prr00jRw3ruhAYjgiyA3UUZFokGFD4UHX") #How to hide key
+co = cohere.Client("") #ADD KEY HERE
 
 def classify_reviews(inputs):
   examples=[

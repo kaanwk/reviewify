@@ -3,7 +3,8 @@ import pickle
 from restaurant_reviews import Restaurant
 from redis_cloud_db import connect_to_redis, add_reviews, get_reviews2, search
 
-API_KEY = 'AIzaSyC4NvunD89s_xmgUUvV59EhX0dGO-zKnbM'
+API_KEY = 'key'
+
 
 def get_reviews(restaurant):
     place_id = get_place_id(restaurant.name, restaurant.location)
