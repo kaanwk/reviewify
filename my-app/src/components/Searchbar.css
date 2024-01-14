@@ -1,0 +1,73 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.3); 
+    border-radius: 30px; 
+    padding: 5px;
+    max-width: 1000px; 
+    margin-left: 24%;
+    margin-right: 18px;
+    margin-top: 8px;
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 30px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    flex-grow: 1; 
+    border: none; 
+    outline: none;
+    background-color: #f5f4f2;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .search-icon {
+    position: flex;
+    left: 10px; 
+    pointer-events: none;
+    size: 20px;
+    
+  }
+  
+  
+
+  .search-icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .searchInput{
+    background-color: #f5f4f2;
+    border: 1px solid rgba(0,0,0,0.3);
+    outline: none;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .overallStats {
+    margin-top: 20px;
+  }
+
+  #searchButton {
+    background-color: #39594D;
+    padding: 10px;
+    color: #f5f4f2;
+    border-radius: 10px;
+    font-family: "Raleway", sans-serif;
+  }
+
+  #searchButton:hover {
+    cursor: pointer;
+    background-color: #3d7460;
+  }
+
+  .new-search {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }

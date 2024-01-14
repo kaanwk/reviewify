@@ -1,0 +1,191 @@
+.flex-container {
+    width: 100%; /* Or the maximum width of your content area */
+    min-height: 1200px;
+    background: #FFF; /* Or any background color you prefer */
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    border-top: 1px solid rgba(0,0,0,0.15);
+    margin-top: 10px;
+    overflow: hidden;
+  }
+
+  .sidebar {
+    padding: 20px;
+    padding-left: 50px;
+    background-color: #F5F4F2;
+    width: 20%;
+    border-right: 1px solid rgba(0,0,0,0.15);
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    display: flex;
+  }
+  
+  .sideList {
+    display: flex;
+    flex-direction: column;
+    position: static;
+  }
+  
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 5px;
+  }
+
+  .sidebar .heading {
+    color: #757575;
+  }
+
+  .sidebar .sideItem{
+    color: #424242;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 5px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  }
+
+  .showCase {
+    background-color: #Fafafa;
+    color: #384248;
+    flex-grow: 3;
+    font-family: "Raleway", sans-serif;
+    padding-left: 40px;
+    padding-bottom: 200px;
+  }
+  
+  .header {
+    margin-left: auto;
+  }
+  
+  .header h1 {
+    font-size: 3rem; 
+    margin-bottom: 10px; 
+    
+  }
+  
+  .divider {
+    height: 0.5px;
+    background-color: #000; 
+    width: 90%; 
+    opacity: 20%;
+    margin-bottom: 20px;
+  }
+  
+  .quote-container {
+    position: relative; /* For absolute positioning of the quote mark */
+    margin: 20px 0; /* Spacing around the quote container */
+    width: 90%;
+    color: black; /* Text color */
+  }
+  
+  .quote-mark {
+    position: absolute;
+    top: -10px; 
+    left: 20px; 
+    width: 40px; /* Size of the quote mark */
+    height: 40px; /* Size of the quote mark */
+    background-color: #FFF; /* Color of the quote mark */
+    clip-path: polygon(0 0, 100% 0, 50% 100%); /* Creates a ">" shape */
+  }
+  
+  .quote {
+    font-size: 1em; 
+    font-weight: bolder;
+  }
+
+  .rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cut-rectangle {
+    position: relative;
+    background-color: #39594d; /* Dark green color */
+    height: 70px; /* Height of the rectangle */
+    width: 300px; /* Width of the rectangle */
+    margin-right: 18px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .cut-rectangle::after {
+    content: '';
+    position: absolute;
+    right: -70px; /* Half the width of the cut-out part */
+    top: 0;
+    border-bottom: 70px solid transparent; /* Half the height of the rectangle */
+    border-left: 70px solid #39594d; /* The same color as the rectangle, creating the cut effect */
+    width: 0;
+  }
+
+  .triangle {
+    border-bottom: 70px solid #39594d;
+    border-left: 70px solid transparent;
+  }
+
+  .square {
+    border-bottom: 70px solid #39594d;
+    border-left: 70px solid #39594d;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .flexStats {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 300px;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  .flexStats p {
+    display: flex;
+  }
+
+  .thegood, .thebad {
+    padding-right: 100px;
+  }
+
+  .thegood h2, .thebad h2 {
+    margin-bottom: 10px;
+  }
+
+  #statOne {
+    color: #047D65;
+  }
+
+  #statTwo {
+    color: #B35E14;
+  }
+
+  #statThree {
+    color: #D18EE2;
+  }
+
+  #empty-fam{
+    padding-top: 20px;
+    color: #424242;
+  }
+
+  #loading-fam{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding-top: 200px;
+  }
+
